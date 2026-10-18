@@ -1,0 +1,24 @@
+name: Acquisition enquiry
+description: Ask about acquiring the version-2 Android game.
+title: "Acquisition enquiry: JET version 2"
+body:
+  - type: markdown
+    attributes:
+      value: "This enquiry is public. Do not include payment data, identity documents or other confidential information."
+  - type: textarea
+    id: interest
+    attributes:
+      label: Intended use and questions
+      description: Describe what you want to acquire and what you would like to review.
+    validations:
+      required: true
+  - type: dropdown
+    id: review
+    attributes:
+      label: Next step requested
+      options:
+        - Discuss the acquisition scope
+        - Arrange a playable demo
+        - Discuss private source review
+    validations:
+      required: true
